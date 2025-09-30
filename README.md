@@ -143,7 +143,7 @@ A polished React Native mobile app built with Expo SDK 54 and TypeScript that pr
 
    ```bash
    git clone <repository-url>
-   cd spacex-launch-explorer
+   cd space-x
    ```
 
 2. **Install dependencies**
