@@ -1,31 +1,31 @@
+import { statusMap } from "@/constants/constants";
+import { Status } from "@/helper/types/commonTypes";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Capsule({
-  status,
-}: {
-  status: {
-    success: boolean;
-    upcoming: boolean;
-  };
-}) {
+export default function Capsule({ status }: { status: Status }) {
   return (
     <View>
-      {status.success ? (
-        <Text style={[styles.statusText, styles.success]}>Success</Text>
-      ) : status.upcoming ? (
-        <Text style={[styles.statusText, styles.upcoming]}>Upcoming</Text>
-      ) : (
-        <Text style={[styles.statusText, styles.na]}>N/A</Text>
-      )}
+      <Text
+        style={[
+          styles.statusText,
+          { backgroundColor: statusMap[status]?.color || "gray" },
+        ]}
+      >
+        {statusMap[status]?.status ?? "N/A"}
+      </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   statusText: {
+    alignItems: "center",
+    justifyContent: "center",
+    fontWeight: "500",
     fontSize: 14,
     textAlign: "center",
+    textTransform: "capitalize",
     color: "white",
     padding: 4,
     borderRadius: 8,

@@ -9,7 +9,15 @@ import {
   View,
 } from "react-native";
 
-function Img({ uri, style }: { uri: string; style?: StyleProp<ImageStyle> }) {
+function Img({
+  uri,
+  resizeMode,
+  style,
+}: {
+  uri: string;
+  resizeMode?: "cover" | "contain" | "stretch" | "repeat" | "center";
+  style?: StyleProp<ImageStyle>;
+}) {
   const [imageLoading, setImageLoading] = useState<boolean>(true);
   const [error, setError] = useState(false);
   return (
@@ -19,7 +27,7 @@ function Img({ uri, style }: { uri: string; style?: StyleProp<ImageStyle> }) {
           <Image
             source={{ uri }}
             style={[styles.image, style]}
-            resizeMode="contain"
+            resizeMode={resizeMode ?? "contain"}
             onLoadStart={() => {
               setImageLoading(true);
               setError(false);

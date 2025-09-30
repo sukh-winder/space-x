@@ -22,6 +22,8 @@ const MAPPING = {
   "chevron.left.forwardslash.chevron.right": "code",
   "chevron.right": "chevron-right",
   "clear.fill": "clear",
+  "location.fill": "location-on",
+  "globe.americas.fill": "public",
 } as IconMapping;
 
 /**
@@ -45,7 +47,6 @@ export function IconSymbol({
     <MaterialIcons
       color={color}
       size={size}
-      // name={MAPPING[name]}
       name={MAPPING[name]}
       style={style}
     />

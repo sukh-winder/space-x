@@ -12,7 +12,7 @@ import {
 
 import { dedupeById } from "@/helper/common";
 import { LaunchesPagination } from "@/helper/types/launchesPagination";
-import Card from "../ui/Card/Card";
+import Card from "../Card/Card";
 import SearchBar from "../ui/SearchBar";
 import { getSpaceXLaunches } from "./utils/apiServices";
 

@@ -4,8 +4,8 @@ import { Launch } from "@/helper/types/launches";
 import { useRouter } from "expo-router";
 import React, { memo } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { IconSymbol } from "../icon-symbol";
-import Img from "../Img";
+import Img from "../ui/Img";
+import { IconSymbol } from "../ui/icon-symbol";
 import CardFooter from "./CardFooter";
 
 function Card({ item }: { item: Launch }) {
@@ -38,13 +38,13 @@ function Card({ item }: { item: Launch }) {
           </View>
         </View>
         <Capsule
-          status={{ success: item?.success!, upcoming: item?.upcoming! }}
+          status={item.success ? "success" : item.upcoming ? "upcoming" : "na"}
         />
       </View>
 
       <CardFooter>
         <TouchableOpacity
-          onPress={() => router.push(`/(space-x)/${item.id}`)}
+          onPress={() => router.push(`/(space-x)/${item.launchpad}/launchPad`)}
           style={styles.navigationLink}
         >
           <View style={styles.iconContainer}>
