@@ -25,11 +25,5 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
+## for complete folder structure and app info click the icon below
 [![sukh-winder/space-x context](https://badge.forgithub.com/sukh-winder/space-x)](https://uithub.com/sukh-winder/space-x)
