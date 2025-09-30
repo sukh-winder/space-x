@@ -1,8 +1,8 @@
-# Welcome to your Expo app 👋
+# Welcome to Space-X Expo app 👋
 
 # SpaceX Launch Explorer
 
-A polished React Native mobile app built with Expo SDK 53 and TypeScript that provides a maps-first experience for exploring SpaceX launches and launchpads.
+A polished React Native mobile app built with Expo SDK 54 and TypeScript that provides a maps-first experience for exploring SpaceX launches and launchpads.
 
 ## 🚀 Features
 
