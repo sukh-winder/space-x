@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "expo-app",
-    "slug": "expo-app",
+    "name": "Space-X",
+    "slug": "space-x-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "expoapp",
+    "scheme": "space-x-app",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
